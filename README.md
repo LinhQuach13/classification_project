@@ -96,7 +96,7 @@
 
 ### Executive Summary - Conclusions & Next Steps
 <hr style="border-top: 10px groove blueviolet; margin-top: 1px; margin-bottom: 1px"></hr>
-**The following are key takeways:**
+<b>The following are key takeways:</b>
 
   -There is not one main driver churn.
 
