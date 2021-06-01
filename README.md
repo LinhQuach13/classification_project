@@ -37,87 +37,17 @@
 #### Data Dictionary
     
 - This is a data dictionary as a reference for the variables used within in the data set.
-
-  |   Feature                           |  Data Type   | Description    |
-| :-------------                        | :----------: | -----------: | 
- | payment_type_id |                      | int64  |
- |internet_service_type_id |               |int64 |
- contract_type_id                          int64  
-  customer_id                              object 
-  gender                                   object 
- senior_citizen                            int64  
- partner                                   object 
- dependents                                object 
- tenure                                    int64  
- phone_service                             object 
- multiple_lines                            object 
- online_security                           object 
- online_backup                             object 
- device_protection                         object 
- tech_support                              object 
- streaming_tv                              object 
- streaming_movies                          object 
- paperless_billing                         object 
- monthly_charges                           float64
- total_charges                             float64
- churn                                     object 
- contract_type                             object 
- internet_service_type                     object 
- payment_type                              object 
- gender_Female                              uint8  
- gender_Male                                uint8  
- partner_No                                 uint8  
- partner_Yes                                uint8  
- dependents_No                              uint8  
- dependents_Yes                             uint8  
- phone_service_No                           uint8  
- phone_service_Yes                          uint8  
- multiple_lines_No                          uint8  
- multiple_lines_No phone service            uint8  
- multiple_lines_Yes                         uint8  
- online_security_No                         uint8  
- online_security_No internet service        uint8  
- online_security_Yes                        uint8  
- online_backup_No                           uint8  
- online_backup_No internet service          uint8  
- online_backup_Yes                          uint8  
- device_protection_No                       uint8  
- device_protection_No internet service      uint8  
- device_protection_Yes                      uint8  
- tech_support_No                            uint8  
- tech_support_No internet service           uint8  
- tech_support_Yes                           uint8  
- streaming_tv_No                            uint8  
- streaming_tv_No internet service           uint8  
- streaming_tv_Yes                           uint8  
- streaming_movies_No                        uint8  
- streaming_movies_No internet service       uint8  
- streaming_movies_Yes                       uint8  
- paperless_billing_No                       uint8  
- 54  paperless_billing_Yes                  uint8  
- 55  churn_No                               uint8  
- 56  churn_Yes                              uint8  
- 57  contract_type_Month-to-month           uint8  
- 58  contract_type_One year                 uint8  
- 59  contract_type_Two year                 uint8  
- 60  internet_service_type_DSL              uint8  
- 61  internet_service_type_Fiber optic      uint8  
- 62  internet_service_type_None             uint8  
- 63  payment_type_Bank transfer (automatic) uint8  
- 64  payment_type_Credit card (automatic)   uint8  
- 65  payment_type_Electronic check          uint8  
- 66  payment_type_Mailed check              uint8  
+ 
 
 |   Feature      |  Data Type   | Description    |
 | :------------- | :----------: | -----------: |
 |  customer_id | object   | unique customer ID   |
-| payment_type_id   | int64 | # of months as a customer|
-| tenure_in_months   | int64 | Whether one is a senior or not|
+| payment_type_id   | int64 |Type of payment: credit card(automatic), Bank transfer(automatic), Mailed check|
+| partner   | object   | 0= no partner, 1= has partner|
+| phone_service  | object   |Yes or No for phone service|
+| tenure   | int64 |# of months with company|
 | total_charges   | int64 | total charges since day 1|
 | churn  | object| Yes = Churn, No = Not Churned|
-| average_charges  | float64| total_charges / tenure_in_months|
-| tenure_in_years   | float64 | tenure_in_months / 12|
-| encoded_churn   | int64 | 1 = Churn, 0 = Not Churned|
 | no_partner_depend   | int64 | no partner & no dependents|
 | phone_lines   | int64 | 1 = has phone lines, 0 = No phone|
 | stream_tv_mov   | int64 | has streaming tv & streaming movie|
@@ -131,21 +61,21 @@
 | device_proctection_no   | uint8 | 1 = no protection, 0 = has protection|
 | device_proctection_no_int   | uint8 | 1 = no internet, 0 = has internet|
 | device_proctection_yes   | uint8 | 1 = has protection, 0 = no protection|
-| tch_support_no   | uint8 | 1 = no tech support, 0 = has tech support|
-| tch_support_no_int   | uint8 | 1 = no internet, 0 = has internet|
-| tch_support_yes  | uint8 | 1 = has tech support, 0 = no tech support|
+| tech_support_No  | uint8 | 1 = no tech support, 0 = has tech support|
+| tech_support_No internet service   | uint8 | 1 = no internet, 0 = has internet|
+| tech_support_yes  | uint8 | 1 = has tech support, 0 = no tech support|
 | paperless_billing_no   | uint8 | 1 = no paperless billing 0 = has paperless billing|
 | paperless_billing_yes   | uint8 | 1 = has paperless billing, 0 = no paperless billing
-| monthly_contract   | uint8 | 1 = on monthly contract, 0 = no monthly contract|
-| one_yr_contract   | uint8 | 1 = on 1 yr contract, 0 = not on 1 yr contract|
-| two_yr_contract   | uint8 | 1 = on 2 yr contract, 0 = not on 2 yr contract|
-| has_dsl  | uint8 | 1 = has dsl, 0 = no dsl|
-| has_fiber_optic   | uint8 | 1 = has fiber optic, 0 = no fiber optic|
-| no_internet   | uint8 | 1 = no internet, 0 = has internet|
-| pmt_bank transfer   | uint8 | 1 = pay w/bank transfer, 0 = no bank transfer|
-| pmt_cc   | uint8 | 1 = pays w/credit card, 0 = no credit card|
-| pmt_electronic_check  | uint8 | 1 = pays w/elec check, 0 = no elec check|
-| pmt_mailed_check | uint8 | 1 = pays w/mail check, 0 = no mail check|
+| contract_type_Month-to-month   | uint8 | 1 = on monthly contract, 0 = no monthly contract|
+| contract_type_One year    | uint8 | 1 = on 1 yr contract, 0 = not on 1 yr contract|
+| contract_type_Two year     | uint8 | 1 = on 2 yr contract, 0 = not on 2 yr contract|
+| internet_service_type_DSL   | uint8 | 1 = has dsl, 0 = no dsl|
+| internet_service_type_Fiber optic    | uint8 | 1 = has fiber optic, 0 = no fiber optic|
+| internet_service_type_None | uint8 | 1 = no internet, 0 = has internet|
+| payment_type_Bank transfer (automatic)   | uint8 | 1 = pay w/bank transfer, 0 = no bank transfer|
+| payment_type_Credit card (automatic)   | uint8 | 1 = pays w/credit card, 0 = no credit card|
+| payment_type_Electronic check  | uint8 | 1 = pays w/elec check, 0 = no elec check|
+| payment_type_Mailed check  | uint8 | 1 = pays w/mail check, 0 = no mail check|
 
 
 #### Initial Hypotheses
