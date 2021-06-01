@@ -7,6 +7,14 @@
 > - Deliver a 5 minute presentation consisting of a high-level notebook walkthrough using your Jupyter Notebook from above; your presentation should be appropriate for your target audience.
 > - Answer panel questions about your code, process, findings and key takeaways, and model.
 
+### Project Planning 
+
+Access to Trello Board3: https://trello.com/b/oBy4gxFx/classification-project
+
+Here is a snapshot of my project planning/setup on the morning of 3/6/21
+
+![image info](https://drive.google.com/drive/my-drive)
+
 ### Project Summary
 <hr style="border-top: 10px groove blueviolet; margin-top: 1px; margin-bottom: 1px"></hr>
 
