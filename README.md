@@ -11,7 +11,7 @@
 
 Access to Trello Board3: https://trello.com/b/oBy4gxFx/classification-project
 
-Here is a snapshot of my project planning/setup on the morning of 3/6/21
+Here is a snapshot of my project planning from my Trello Board
 
 ![image](https://user-images.githubusercontent.com/80718476/120331153-190aba00-c2b3-11eb-98b4-4b8b7e765120.png)
 
