@@ -45,8 +45,7 @@ def prep_telco_data(df):
     dummy_df = pd.get_dummies(df[col_list])
     dummy_df
     #Concatenate the dummy_df dataframe above with the original df
-    df = pd.concat([df, dummy_df], axis=1)
-    
+    df = pd.concat([df, dummy_df], axis=1) 
     return df
 
 
