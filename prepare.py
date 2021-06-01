@@ -56,7 +56,7 @@ def corr_telco_data(df):
     - df: a pandas DataFrame with the expected feature names and columns
     '''
     #creating correlation table
-    df=  prep_telco_data(df).corr().reset_index()
+    df=  df.corr().reset_index()
     #rename columns in correlation table
     df.rename(columns={"index": "col_names"},  inplace= True)
     #Filter columns to only churn_no and churn_yes and tranpose table
@@ -67,8 +67,6 @@ def corr_telco_data(df):
     df= df.drop([0], axis=0)
     #Sort correlation values
     df.sort_values(by='churn_No')
-    # drop column 81 and 82
-    df.drop(columns= [81, 82], inplace= True)
     return df
 
 def clean_churn(df):
