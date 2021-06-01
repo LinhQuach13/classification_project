@@ -46,8 +46,6 @@ def prep_telco_data(df):
     dummy_df
     #Concatenate the dummy_df dataframe above with the original df
     df = pd.concat([df, dummy_df], axis=1)
-#     #drop the 81 and 82
-#     df = telco_combined.drop(columns= [81], [82])
     
     return df
 
