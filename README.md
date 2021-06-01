@@ -121,17 +121,12 @@
 
 <hr style="border-top: 10px groove blueviolet; margin-top: 1px; margin-bottom: 1px"></hr>
 
-##### **Plan ->** Acquire -> Prepare -> Explore -> Model -> Deliver
-- [x] Create README.md with data dictionary, project and business goals, come up with initial hypotheses.
-- [x] Acquire data from the Codeup Database and create a function to automate this process. Save the function in an acquire.py file to import into the Final Report Notebook.
-- [x] Clean and prepare data for the first iteration through the pipeline, MVP preparation. Create a function to automate the process, store the function in a prepare.py module, and prepare data in Final Report Notebook by importing and using the funtion.
-- [x]  Clearly define two hypotheses, set an alpha, run the statistical tests needed, reject or fail to reject the Null Hypothesis, and document findings and takeaways.
-- [x] Establish a baseline accuracy and document well.
-- [x] Train three different classification models.
-- [x] Evaluate models on train and validate datasets.
-- [x] Choose the model with that performs the best and evaluate that single model on the test dataset.
-- [x] Create csv file with the measurement id, the probability of the target values, and the model's prediction for each observation in my test dataset.
-- [x] Document conclusions, takeaways, and next steps in the Final Report Notebook.
+- Acquire the data
+- Prepare and clean data
+- Explore 
+- Model & Evaluate
+- Recommendataions
+
 
 ___
 
