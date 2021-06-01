@@ -29,10 +29,6 @@
 > - All necessary modules to make my project reproducible
 > - A csv file of prediction probabilities and actual values for churn.
 
-#### Project Context
-> - The Iris dataset I'm using came from the Codeup database.
-> - Find out more about Fisher's Iris Dataset [here](https://towardsdatascience.com/the-iris-dataset-a-little-bit-of-history-and-biology-fb4812f5a7b5).
-
 
 #### Data Dictionary
     
