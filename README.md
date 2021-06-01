@@ -9,7 +9,7 @@
 
 ### Project Planning 
 
-Access to Trello Board3: https://trello.com/b/oBy4gxFx/classification-project
+Access to Trello Board: https://trello.com/b/oBy4gxFx/classification-project
 
 Here is a snapshot of my project planning from my Trello Board
 
